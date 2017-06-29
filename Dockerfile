@@ -42,6 +42,7 @@ RUN apt-get update
 RUN Rscript -e "install.packages('ggplot2')"
 RUN apt-get install -y libgdal-dev
 RUN Rscript -e "install.packages('rgdal')"
+RUN Rscript -e "install.packages('rgeos')"
 
 RUN rm -rf /var/lib/apt/lists/*
 
